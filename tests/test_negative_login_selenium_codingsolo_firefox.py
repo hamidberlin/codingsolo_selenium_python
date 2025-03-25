@@ -1,37 +1,26 @@
 import unittest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC  # Import für Expected Conditions
+from utils.webdriver_setup import WebDriverSetup
+from pages.login_page import LoginPage
 
-class TestNegativeLoginCodingSoloFirefox(unittest.TestCase):
+class TestNegativeLogin(unittest.TestCase):
 
     def setUp(self):
-        """ Setup: Startet den WebDriver und öffnet die Login-Seite. """
-        print("Initialisiere WebDriver für den Test")
-        self.driver = webdriver.Firefox()
+        print("Starte WebDriver für den Test")
+        self.driver = WebDriverSetup.get_driver()
         self.driver.get("https://seleniumkurs.codingsolo.de")
+        self.login_page = LoginPage(self.driver)
 
     def tearDown(self):
-        """ Cleanup: Beendet den WebDriver nach dem Test. """
-        print("Nach dem Test. Ich räume auf")
+        print("Beende WebDriver nach dem Test")
         self.driver.quit()
 
-    def test_negative_login(self):
-        """ Test: Negativer Login-Versuch mit falschen Anmeldedaten. """
-        print("Starte test_login_fehlschlag")
-
-        ## Arrange - Eingabe von falschen Login-Daten
-        wait = WebDriverWait(self.driver, 10)  # Warte maximal 10 Sekunden auf Elemente
-        wait.until(EC.presence_of_element_located((By.ID, "__ac_name"))).send_keys("test")
-        wait.until(EC.presence_of_element_located((By.ID, "__ac_password"))).send_keys("1234")
-
-        ## Act - Login-Button klicken
-        self.driver.find_element(By.XPATH, "//input[@name='buttons.login']").click()
-
-        ## Assert - Fehlernachricht prüfen (warten, bis sie sichtbar ist)
-        fehlerMeldung = wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='portalMessage error']"))).text
-        self.assertTrue('Anmeldung fehlgeschlagen' in fehlerMeldung, "Fehlermeldung nicht gefunden!")
+    def test_login_failed(self):
+        print("Starte Test: Fehlgeschlagener Login")
+        self.login_page.enter_username("test")
+        self.login_page.enter_password("1234")
+        self.login_page.click_login()
+        error_message = self.login_page.get_error_message()
+        self.assertIn("Anmeldung fehlgeschlagen", error_message)
 
 if __name__ == '__main__':
     unittest.main()

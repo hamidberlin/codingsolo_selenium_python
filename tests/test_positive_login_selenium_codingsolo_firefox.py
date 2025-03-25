@@ -1,47 +1,26 @@
 import unittest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC  # Import für Expected Conditions
+from utils.webdriver_setup import WebDriverSetup
+from pages.login_page import LoginPage
 
-
-class TestPositiveLoginCodingSoloFirefox(unittest.TestCase):
+class TestPositiveLogin(unittest.TestCase):
 
     def setUp(self):
-        """ Setup-Methode: Startet den WebDriver und öffnet die Login-Seite. """
-        print("Initialisiere WebDriver für den Test")
-        self.driver = webdriver.Firefox()  # Öffnet den Firefox-Browser
-        self.driver.get("https://seleniumkurs.codingsolo.de")  # Navigiert zur Test-Webseite
+        print("Starte WebDriver für den Test")
+        self.driver = WebDriverSetup.get_driver()
+        self.driver.get("https://seleniumkurs.codingsolo.de")
+        self.login_page = LoginPage(self.driver)
 
     def tearDown(self):
-        """ Cleanup-Methode: Schließt den WebDriver nach dem Test. """
-        print("Nach dem Test. Ich räume auf")
-        self.driver.quit()  # Beendet den gesamten WebDriver-Prozess und schließt den Browser
+        print("Beende WebDriver nach dem Test")
+        self.driver.quit()
 
-    def test_login(self):
-        """ Testfall: Erfolgreicher Login mit gültigen Zugangsdaten. """
-        print("Starte test_login")
-
-        ## Arrange - Vorbereitung: Eingabe der Login-Daten
-        wait = WebDriverWait(self.driver, 10)  # Warte maximal 10 Sekunden auf Elemente
-
-        # Warte auf das Eingabefeld für den Benutzernamen und gebe "selenium42" ein
-        wait.until(EC.presence_of_element_located((By.ID, "__ac_name"))).send_keys("selenium42")
-
-        # Warte auf das Eingabefeld für das Passwort und gebe "R5vxI0j60" ein
-        wait.until(EC.presence_of_element_located((By.ID, "__ac_password"))).send_keys("R5vxI0j60")
-
-        ## Act - Handlung: Login-Button anklicken
-        self.driver.find_element(By.XPATH, "//input[@name='buttons.login']").click()
-
-        ## Assert - Überprüfung: Willkommensmeldung erscheint nach erfolgreichem Login
-        # Warte darauf, dass die Statusmeldung sichtbar ist, dann speichere den Text
-        statusMeldung = wait.until(
-            EC.visibility_of_element_located((By.XPATH, "//div[@class='portalMessage info']"))).text
-
-        # Prüfe, ob die Willkommensmeldung im Text enthalten ist
-        self.assertTrue('Willkommen!' in statusMeldung, "Login fehlgeschlagen - 'Willkommen!' nicht gefunden!")
-
+    def test_login_successful(self):
+        print("Starte Test: Erfolgreicher Login")
+        self.login_page.enter_username("selenium42")
+        self.login_page.enter_password("R5vxI0j60")
+        self.login_page.click_login()
+        success_message = self.login_page.get_success_message()
+        self.assertIn("Willkommen!", success_message)
 
 if __name__ == '__main__':
     unittest.main()
