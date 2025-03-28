@@ -1,10 +1,10 @@
-import unittest  # Importiert das unittest-Modul für das strukturierte Testen
+import unittest  # Importiert das unittest-Modul für strukturiertes Testen
 from utils.webdriver_setup import WebDriverSetup  # Importiert die WebDriver-Setup-Klasse
 from pages.login_page import LoginPage  # Importiert die LoginPage-Klasse für den Test
 
-class TestPositiveLogin(unittest.TestCase):
+class TestNegativeLogin(unittest.TestCase):
     """
-    Testklasse für einen erfolgreichen Login.
+    Testklasse für einen fehlgeschlagenen Login-Versuch.
     Verwendet unittest für die Teststruktur.
     """
 
@@ -26,18 +26,24 @@ class TestPositiveLogin(unittest.TestCase):
         print("Beende WebDriver nach dem Test")
         self.driver.quit()  # Schließt den WebDriver und den Browser
 
-    def test_login_successful(self):
+    def test_login_failed(self):
         """
-        Testet einen erfolgreichen Login-Vorgang mit gültigen Zugangsdaten.
-        Überprüft, ob eine Erfolgsmeldung angezeigt wird.
+        Testet einen fehlgeschlagenen Login-Versuch mit falschen Zugangsdaten.
+        Überprüft, ob eine Fehlermeldung angezeigt wird.
         """
-        print("Starte Test: Erfolgreicher Login")
-        self.login_page.enter_username("selenium42")  # Gültigen Benutzernamen eingeben
-        self.login_page.enter_password("R5vxI0j60")  # Gültiges Passwort eingeben
-        self.login_page.click_login()  # Login-Button klicken
+        print("Starte Test: Fehlgeschlagener Login")
 
-        success_message = self.login_page.get_success_message()  # Erfolgsmeldung abrufen
-        self.assertIn("Willkommen!", success_message)  # Überprüfen, ob die Erfolgsmeldung korrekt ist
+        ## Arrange
+        #self.login_page.enter_username("test")
+        #self.login_page.enter_password("1234")
+        self.login_page.enter_credentials("test", "1234")
+
+        ## Act
+        self.login_page.click_login()
+
+        ## Asssert
+        error_message = self.login_page.get_error_message()  # Fehlermeldung abrufen
+        self.assertIn("Anmeldung fehlgeschlagen", error_message)  # Überprüfen, ob die Fehlermeldung korrekt ist
 
 if __name__ == '__main__':
     unittest.main()  # Führt die Tests aus, wenn das Skript direkt gestartet wird
