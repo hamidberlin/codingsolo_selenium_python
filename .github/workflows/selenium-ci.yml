@@ -30,7 +30,11 @@ jobs:
           pytest --html=report.html --self-contained-html
 
       - name: Upload Test Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2  # Verwende v2 statt v3
         with:
           name: selenium-test-report
           path: report.html
+
+      - name: Enable Debugging
+        run: |
+          echo "GITHUB_ACTIONS_DEBUG=TRUE" >> $GITHUB_ENV
