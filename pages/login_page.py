@@ -1,7 +1,6 @@
-from selenium.webdriver.common.by import By  # Ermöglicht das Auffinden von Elementen über verschiedene Selektoren
-from selenium.webdriver.support.ui import WebDriverWait  # Ermöglicht explizite Wartezeiten für Elemente
-from selenium.webdriver.support import expected_conditions as EC  # Enthält Bedingungen, um Elemente zu überprüfen
-
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class LoginPage:
     """
@@ -22,49 +21,47 @@ class LoginPage:
         self.success_message = (By.XPATH, "//div[@class='portalMessage info']")  # XPATH für Erfolgsnachrichten
 
     def enter_username(self, username):
-        """
-        Gibt den Benutzernamen in das entsprechende Feld ein.
-
-        :param username: Der einzugebende Benutzername.
-        """
-        WebDriverWait(self.driver, 10).until(
+        """Gibt den Benutzernamen in das entsprechende Feld ein."""
+        WebDriverWait(self.driver, 5).until(
             EC.presence_of_element_located(self.username_field)
         ).send_keys(username)
 
     def enter_password(self, password):
-        """
-        Gibt das Passwort in das entsprechende Feld ein.
+        """Gibt das Passwort in das entsprechende Feld ein."""
+        WebDriverWait(self.driver, 5).until(
+            EC.presence_of_element_located(self.password_field)
+        ).send_keys(password)
 
-        :param password: Das einzugebende Passwort.
-        """
-        WebDriverWait(self.driver, 10).until(
+    def enter_credentials(self, username, password):
+        """Gibt die Zugangsdaten (Benutzername und Passwort) in die entsprechenden Felder ein."""
+        WebDriverWait(self.driver, 5).until(
+            EC.presence_of_element_located(self.username_field)
+        ).send_keys(username)
+
+        WebDriverWait(self.driver, 5).until(
             EC.presence_of_element_located(self.password_field)
         ).send_keys(password)
 
     def click_login(self):
-        """
-        Klickt auf den Login-Button.
-        """
-        WebDriverWait(self.driver, 10).until(
+        """Klickt auf den Login-Button."""
+        WebDriverWait(self.driver, 5).until(
             EC.element_to_be_clickable(self.login_button)
         ).click()
 
     def get_error_message(self):
-        """
-        Ruft die Fehlermeldung nach einem fehlgeschlagenen Login-Versuch ab.
-
-        :return: Der Text der Fehlermeldung.
-        """
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located(self.error_message)
-        ).text
+        """Ruft die Fehlermeldung nach einem fehlgeschlagenen Login-Versuch ab."""
+        try:
+            return WebDriverWait(self.driver, 5).until(
+                EC.visibility_of_element_located(self.error_message)
+            ).text
+        except:
+            return None  # Keine Fehlermeldung, falls nicht vorhanden
 
     def get_success_message(self):
-        """
-        Ruft die Erfolgsnachricht nach einem erfolgreichen Login-Vorgang ab.
-
-        :return: Der Text der Erfolgsnachricht.
-        """
-        return WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located(self.success_message)
-        ).text
+        """Ruft die Erfolgsnachricht nach einem erfolgreichen Login-Vorgang ab."""
+        try:
+            return WebDriverWait(self.driver, 5).until(
+                EC.visibility_of_element_located(self.success_message)
+            ).text
+        except:
+            return None  # Keine Erfolgsnachricht, falls nicht vorhanden

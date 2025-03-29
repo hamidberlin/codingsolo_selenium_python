@@ -15,6 +15,10 @@ class TestPositiveLogin(unittest.TestCase):
     Jeder Test speichert einen Screenshot (passed & failed).
     """
 
+    def __init__(self, methodName: str = "runTest"):
+        super().__init__(methodName)
+        self._outcome = None
+
     def setUp(self):
         """Startet den WebDriver und navigiert zur Login-Seite."""
         logger.info("Starte WebDriver für den Test")

@@ -1,0 +1,112 @@
+2025-03-28 21:03:43,129 - INFO - Test-Session gestartet
+2025-03-28 21:03:43,129 - INFO - Starte WebDriver für den Test
+2025-03-28 21:03:45,598 - INFO - Starte Test: Erfolgreicher Login
+2025-03-28 21:03:46,406 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:03:46,467 - INFO - Screenshot gespeichert: screenshots/passed/test_login_successful_2025-03-28_21-03-46.png
+2025-03-28 21:03:46,467 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:03:46,467 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:03:46,785 - INFO - Test-Session beendet
+2025-03-28 21:04:46,431 - INFO - Test-Session gestartet
+2025-03-28 21:04:46,431 - INFO - Starte WebDriver für den Test
+2025-03-28 21:04:48,917 - INFO - Starte Test: Erfolgreicher Login
+2025-03-28 21:04:49,609 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:04:49,664 - INFO - Screenshot gespeichert: screenshots/passed/test_login_successful_2025-03-28_21-04-49.png
+2025-03-28 21:04:49,664 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:04:49,664 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:04:49,983 - INFO - Test-Session beendet
+2025-03-28 21:07:29,219 - INFO - Test-Session gestartet
+2025-03-28 21:07:31,613 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:07:37,483 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:07:40,218 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:07:40,760 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:07:43,511 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:07:44,026 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:07:44,339 - INFO - Test-Session beendet
+2025-03-28 21:10:11,249 - INFO - Test-Session gestartet
+2025-03-28 21:10:13,529 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:10:19,362 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:10:21,977 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:10:22,452 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:10:25,084 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:10:25,522 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:10:25,855 - INFO - Test-Session beendet
+2025-03-28 21:11:19,489 - INFO - Test-Session gestartet
+2025-03-28 21:11:21,873 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:11:27,752 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:11:30,438 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:11:30,969 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:11:33,640 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:11:34,151 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:11:34,488 - INFO - Test-Session beendet
+2025-03-28 21:14:30,930 - INFO - Test-Session gestartet
+2025-03-28 21:14:33,314 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:14:39,213 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:14:39,214 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:14:41,921 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:14:42,413 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:14:42,413 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:14:45,154 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:14:45,663 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:14:45,663 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:14:45,992 - INFO - Test-Session beendet
+2025-03-28 21:16:56,031 - INFO - Test-Session gestartet
+2025-03-28 21:16:58,467 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:17:04,385 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:17:04,385 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:17:07,136 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:17:07,632 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:17:07,632 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:17:10,336 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:17:10,829 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:17:10,830 - INFO - Kein Fehler aufgetreten, kein Screenshot notwendig.
+2025-03-28 21:17:11,153 - INFO - Test-Session beendet
+2025-03-28 21:18:33,500 - INFO - Test-Session gestartet
+2025-03-28 21:18:35,906 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:18:41,752 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:18:41,820 - INFO - Screenshot gespeichert: /Users/dev/Dev/projects/python/Codingsolo_Selenium_Python/tests/tests/screenshots/passed/screenshot_test_login_1___selenium42____R5vxI0j60___2025-03-28_21-18-41.png
+2025-03-28 21:18:44,546 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:18:45,051 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:18:45,112 - INFO - Screenshot gespeichert: /Users/dev/Dev/projects/python/Codingsolo_Selenium_Python/tests/tests/screenshots/passed/screenshot_test_login_2___testuser1____password123___2025-03-28_21-18-45.png
+2025-03-28 21:18:47,759 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:18:48,269 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:18:48,329 - INFO - Screenshot gespeichert: /Users/dev/Dev/projects/python/Codingsolo_Selenium_Python/tests/tests/screenshots/passed/screenshot_test_login_3___admin____admin123___2025-03-28_21-18-48.png
+2025-03-28 21:18:48,646 - INFO - Test-Session beendet
+2025-03-28 21:22:28,098 - INFO - Test-Session gestartet
+2025-03-28 21:22:28,098 - INFO - Starte WebDriver für den Test
+2025-03-28 21:22:30,490 - INFO - Starte Test: Erfolgreicher Login
+2025-03-28 21:22:31,354 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:22:31,421 - INFO - Screenshot gespeichert: screenshots/passed/test_login_successful_2025-03-28_21-22-31.png
+2025-03-28 21:22:31,421 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:22:31,421 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:22:31,758 - INFO - Test-Session beendet
+2025-03-28 21:22:55,450 - INFO - Test-Session gestartet
+2025-03-28 21:22:57,794 - INFO - Teste Login mit Benutzer: selenium42
+2025-03-28 21:23:03,587 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-28 21:23:03,654 - INFO - Screenshot gespeichert: screenshots/passed/test_login_1___selenium42____R5vxI0j60___2025-03-28_21-23-03.png
+2025-03-28 21:23:03,654 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:23:03,654 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:23:06,466 - INFO - Teste Login mit Benutzer: testuser1
+2025-03-28 21:23:06,944 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:23:07,006 - INFO - Screenshot gespeichert: screenshots/passed/test_login_2___testuser1____password123___2025-03-28_21-23-06.png
+2025-03-28 21:23:07,006 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:23:07,006 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:23:09,705 - INFO - Teste Login mit Benutzer: admin
+2025-03-28 21:23:10,232 - WARNING - Fehlermeldung erhalten: Error Anmeldung fehlgeschlagen. Sowohl beim Benutzernamen als auch beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Feststelltaste nicht aktiviert ist.
+2025-03-28 21:23:10,280 - INFO - Screenshot gespeichert: screenshots/passed/test_login_3___admin____admin123___2025-03-28_21-23-10.png
+2025-03-28 21:23:10,280 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-28 21:23:10,280 - INFO - Beende WebDriver nach dem Test
+2025-03-28 21:23:10,597 - INFO - Test-Session beendet
+2025-03-29 04:28:13,415 - INFO - Test-Session gestartet
+2025-03-29 04:28:13,416 - INFO - Starte WebDriver für den Test
+2025-03-29 04:28:16,642 - INFO - Starte Test: Erfolgreicher Login
+2025-03-29 04:28:17,600 - INFO - Erfolgreich eingeloggt: Info Willkommen! Sie sind nun angemeldet.
+2025-03-29 04:28:17,661 - INFO - Screenshot gespeichert: screenshots/passed/test_login_successful_2025-03-29_04-28-17.png
+2025-03-29 04:28:17,661 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-29 04:28:17,661 - INFO - Beende WebDriver nach dem Test
+2025-03-29 04:28:17,974 - INFO - Test-Session beendet
+2025-03-29 04:56:18,053 - INFO - Test-Session gestartet
+2025-03-29 04:56:18,054 - INFO - Starte WebDriver für den Test
+2025-03-29 04:56:21,281 - INFO - Screenshot gespeichert: screenshots/passed/test_login_failed_2025-03-29_04-56-21.png
+2025-03-29 04:56:21,281 - INFO - Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.
+2025-03-29 04:56:21,282 - INFO - Beende WebDriver nach dem Test
+2025-03-29 04:56:21,622 - INFO - Test-Session beendet

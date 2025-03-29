@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbfc759-7046-4310-babb-55ffbb056fb4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/selenium-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/selenium-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/dragdrop_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/dragdrop_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/iframe_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/iframe_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/testAppPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/testAppPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/testform1_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/testform1_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/webelemente_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webelemente_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestLoginWithDDTFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestLoginWithDDTFirefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestNegativeLoginFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestNegativeLoginFirefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestPositiveLoginFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestPositiveLoginFirefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/logging_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logging_config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2uosEinf8vM3WH3rjr4CKsZWBEr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +47,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.executor": "Run",
+    "Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login.executor": "Run",
+    "Python tests.Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed.executor": "Run",
+    "Python tests.Python tests for test_homepage_firefox.TestHomePageFireFox.test_homePage.executor": "Run",
+    "Python tests.Python tests in TestLoginWithDDTAndScreenshotFirefox.py.executor": "Run",
+    "Python tests.Python tests in TestLoginWithDDTFirefox.py.executor": "Run",
+    "Python tests.Python tests in TestPositiveLoginFirefox.py.executor": "Run",
+    "Python tests.Python tests in test_homepage_firefox.py.executor": "Run",
+    "Python tests.Python tests in test_negative_login_selenium_codingsolo_firefox.py.executor": "Run",
+    "Python tests.Python tests in test_positive_login_selenium_codingsolo_firefox.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -47,8 +70,8 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed">
+    <configuration name="Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,13 +82,77 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_target" value="&quot;TestLoginWithDDTAndScreenshotFirefox.TestLogin&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Codingsolo_Selenium_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Codingsolo_Selenium_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in TestLoginWithDDTAndScreenshotFirefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Codingsolo_Selenium_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/TestLoginWithDDTAndScreenshotFirefox.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in TestPositiveLoginFirefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Codingsolo_Selenium_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/TestPositiveLoginFirefox.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in tests" />
+        <item itemvalue="Python tests.Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed" />
+        <item itemvalue="Python tests.Python tests in TestPositiveLoginFirefox.py" />
+        <item itemvalue="Python tests.Python tests in TestLoginWithDDTAndScreenshotFirefox.py" />
+        <item itemvalue="Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login" />
+        <item itemvalue="Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -86,5 +173,16 @@
       <updated>1742926151880</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,6 +1,15 @@
+import logging
+import os
 import unittest  # Importiert das unittest-Modul für strukturiertes Testen
+from datetime import datetime
+
 from utils.webdriver_setup import WebDriverSetup  # Importiert die WebDriver-Setup-Klasse
 from pages.login_page import LoginPage  # Importiert die LoginPage-Klasse für den Test
+
+
+# Logger wird aus conftest.py automatisch initialisiert
+logger = logging.getLogger(__name__)
+
 
 class TestNegativeLogin(unittest.TestCase):
     """
@@ -8,23 +17,43 @@ class TestNegativeLogin(unittest.TestCase):
     Verwendet unittest für die Teststruktur.
     """
 
+    def __init__(self, methodName: str = "runTest"):
+        super().__init__(methodName)
+        self._outcome = None
+
     def setUp(self):
-        """
-        Vorbereitungsfunktion, die vor jedem Test ausgeführt wird.
-        Startet den WebDriver und navigiert zur Login-Seite.
-        """
-        print("Starte WebDriver für den Test")
-        self.driver = WebDriverSetup.get_driver()  # WebDriver-Instanz aus der Setup-Klasse abrufen
-        self.driver.get("https://seleniumkurs.codingsolo.de")  # Zur Login-Seite navigieren
-        self.login_page = LoginPage(self.driver)  # Instanziert die LoginPage-Klasse zur Interaktion mit der Seite
+        """Startet den WebDriver und navigiert zur Login-Seite."""
+        logger.info("Starte WebDriver für den Test")
+        self.driver = WebDriverSetup.get_driver()
+        self.driver.get("https://seleniumkurs.codingsolo.de")
+        self.login_page = LoginPage(self.driver)
 
     def tearDown(self):
-        """
-        Aufräumfunktion, die nach jedem Test ausgeführt wird.
-        Beendet den WebDriver.
-        """
-        print("Beende WebDriver nach dem Test")
-        self.driver.quit()  # Schließt den WebDriver und den Browser
+        """Speichert einen Screenshot und beendet den WebDriver."""
+        test_failed = any(error for (_, error) in self._outcome.errors if error)
+
+        # Screenshot speichern (egal ob der Test erfolgreich oder fehlgeschlagen ist)
+        self.save_screenshot(success=not test_failed)
+
+        if test_failed:
+            logger.warning("Test fehlgeschlagen, Screenshot gespeichert unter 'screenshots/failed/'.")
+        else:
+            logger.info("Test erfolgreich, Screenshot gespeichert unter 'screenshots/passed/'.")
+
+        logger.info("Beende WebDriver nach dem Test")
+        self.driver.quit()
+
+    def save_screenshot(self, success=True):
+        """Speichert einen Screenshot unter 'screenshots/passed/' oder 'screenshots/failed/'."""
+        folder = "screenshots/passed" if success else "screenshots/failed"
+        os.makedirs(folder, exist_ok=True)
+
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        test_name = self.id().split(".")[-1]  # Holt den Namen des Tests
+        screenshot_filename = os.path.join(folder, f"{test_name}_{timestamp}.png")
+
+        self.driver.save_screenshot(screenshot_filename)
+        logger.info(f"Screenshot gespeichert: {screenshot_filename}")
 
     def test_login_failed(self):
         """
