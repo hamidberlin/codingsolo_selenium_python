@@ -1,0 +1,23 @@
+name: Selenium Tests  # Name des CI-Workflows, der in GitHub Actions angezeigt wird
+
+on: [push, pull_request]  # Der Workflow wird bei jedem Push und Pull-Request aufgerufen
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Der Job läuft auf der neuesten Ubuntu-Version
+
+    steps:
+      - name: Checkout Repository  # Holt den neuesten Code aus dem Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python  # Richtet die Python-Umgebung ein
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Gibt an, dass Python 3.9 installiert wird
+
+      - name: Install Dependencies  # Installiert alle Abhängigkeiten aus requirements.txt
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Selenium Tests  # Führt die Selenium-Tests mit pytest aus
+        run: pytest --html=report.html --self-contained-html  # Erstellt einen HTML-Testbericht
