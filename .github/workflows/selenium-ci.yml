@@ -21,3 +21,8 @@ jobs:
 
       - name: Run Selenium Tests  # Führt die Selenium-Tests mit pytest aus
         run: pytest --html=report.html --self-contained-html  # Erstellt einen HTML-Testbericht
+      - name: Upload Test Report  # Speichert den Testbericht als Artefakt
+        uses: actions/upload-artifact@v3
+        with:
+          name: selenium-test-report
+          path: report.html
