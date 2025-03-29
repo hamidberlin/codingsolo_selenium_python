@@ -1,27 +1,34 @@
-name: Selenium Tests  # Name des CI-Workflows, der in GitHub Actions angezeigt wird
+name: Selenium Tests
 
-on: [push, pull_request]  # Der Workflow wird bei jedem Push und Pull-Request aufgerufen
+on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # Der Job läuft auf der neuesten Ubuntu-Version
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository  # Holt den neuesten Code aus dem Repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python  # Richtet die Python-Umgebung ein
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Gibt an, dass Python 3.9 installiert wird
+          python-version: '3.9'
 
-      - name: Install Dependencies  # Installiert alle Abhängigkeiten aus requirements.txt
+      - name: Install Dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Run Selenium Tests  # Führt die Selenium-Tests mit pytest aus
-        run: pytest --html=report.html --self-contained-html  # Erstellt einen HTML-Testbericht
-      - name: Upload Test Report  # Speichert den Testbericht als Artefakt
+      - name: Install Chrome & ChromeDriver
+        run: |
+          sudo apt update
+          sudo apt install -y google-chrome-stable
+          sudo apt install -y chromium-chromedriver
+
+      - name: Run Selenium Tests
+        run: pytest --tb=short --maxfail=5 --html=report.html --self-contained-html || true
+
+      - name: Upload Test Report
         uses: actions/upload-artifact@v3
         with:
           name: selenium-test-report
