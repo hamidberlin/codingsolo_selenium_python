@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbfc759-7046-4310-babb-55ffbb056fb4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/selenium-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/selenium-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/selenium-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestHomePageFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_homepage_firefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestLoginWithDDTAndScreenshotFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_with_ddt_and_screenshot_firefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestLoginWithDDTFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_with_ddt_firefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestNegativeLoginFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_negative_login_firefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestPositiveLoginFirefox.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_positive_login_firefox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests/screenshots/passed/screenshot_test_login_1___selenium42____R5vxI0j60___2025-03-28_21-18-41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests/screenshots/passed/screenshot_test_login_2___testuser1____password123___2025-03-28_21-18-45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests/screenshots/passed/screenshot_test_login_3___admin____admin123___2025-03-28_21-18-48.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +67,8 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed">
-    <configuration name="Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_negative_login_firefox.TestNegativeLogin.test_login_failed">
+    <configuration name="Python tests for tests.test_login_with_ddt_and_screenshot_firefox.TestLogin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,11 +79,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestLoginWithDDTAndScreenshotFirefox.TestLogin&quot;" />
+      <option name="_new_target" value="&quot;tests.test_login_with_ddt_and_screenshot_firefox.TestLogin&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_login_with_ddt_and_screenshot_firefox.TestLogin.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,11 +94,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login&quot;" />
+      <option name="_new_target" value="&quot;tests.test_login_with_ddt_and_screenshot_firefox.TestLogin.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_negative_login_firefox.TestNegativeLogin.test_login_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,11 +109,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed&quot;" />
+      <option name="_new_target" value="&quot;tests.test_negative_login_firefox.TestNegativeLogin.test_login_failed&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in TestLoginWithDDTAndScreenshotFirefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_login_with_ddt_and_screenshot_firefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,11 +124,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/TestLoginWithDDTAndScreenshotFirefox.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_login_with_ddt_and_screenshot_firefox.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in TestPositiveLoginFirefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_positive_login_firefox.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Codingsolo_Selenium_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,17 +139,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/TestPositiveLoginFirefox.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_positive_login_firefox.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for TestNegativeLoginFirefox.TestNegativeLogin.test_login_failed" />
-        <item itemvalue="Python tests.Python tests in TestPositiveLoginFirefox.py" />
-        <item itemvalue="Python tests.Python tests in TestLoginWithDDTAndScreenshotFirefox.py" />
-        <item itemvalue="Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin.test_login" />
-        <item itemvalue="Python tests.Python tests for TestLoginWithDDTAndScreenshotFirefox.TestLogin" />
+        <item itemvalue="Python tests.Python tests for tests.test_negative_login_firefox.TestNegativeLogin.test_login_failed" />
+        <item itemvalue="Python tests.Python tests in test_positive_login_firefox.py" />
+        <item itemvalue="Python tests.Python tests in test_login_with_ddt_and_screenshot_firefox.py" />
+        <item itemvalue="Python tests.Python tests for tests.test_login_with_ddt_and_screenshot_firefox.TestLogin.test_login" />
+        <item itemvalue="Python tests.Python tests for tests.test_login_with_ddt_and_screenshot_firefox.TestLogin" />
       </list>
     </recent_temporary>
   </component>
