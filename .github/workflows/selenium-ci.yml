@@ -11,7 +11,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -25,7 +24,21 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Install Chrome & ChromeDriver
+        run: |
+          sudo apt update
+          sudo apt install -y google-chrome-stable
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f 1)
+          sudo apt install -y chromium-chromedriver
+
+      - name: Verify Installation
+        run: |
+          google-chrome --version
+          chromedriver --version
+
       - name: Run Selenium Tests
+        env:
+          DISPLAY: ":99"
         run: |
           pytest --html=report.html --self-contained-html
 
@@ -34,7 +47,3 @@ jobs:
         with:
           name: selenium-test-report
           path: report.html
-
-      - name: Enable Debugging
-        run: |
-          echo "GITHUB_ACTIONS_DEBUG=TRUE" >> $GITHUB_ENV
